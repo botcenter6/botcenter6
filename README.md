@@ -1,16 +1,25 @@
-## Hi there 👋
+# مركز الروبوتات - BOTCENTER (Flutter Web)
 
-<!--
-**botcenter6/botcenter6** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+مشروع Flutter Web متعدد الصفحات باللغة العربية (RTL) مع ثيم أزرق/أبيض وخط Cairo.
+يشمل الصفحات: الرئيسية، بوت النمر، بوت الذئب، طرق الدفع والتواصل، وتنصيب النظام وتشغيل البوت.
 
-Here are some ideas to get you started:
+## المتطلبات
+- Flutter 3+
+- تفعيل الويب: `flutter config --enable-web`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## التشغيل محلياً
+```
+flutter pub get
+flutter run -d chrome
+```
+
+## البناء للنشر
+```
+flutter build web
+```
+ارفع محتويات `build/web` إلى GitHub Pages أو Netlify أو Vercel.
+
+## تخصيص
+- الألوان والخط: `lib/theme.dart`
+- النصوص/المحتوى: `lib/pages/*.dart`
+- الصور: `assets/images/`
